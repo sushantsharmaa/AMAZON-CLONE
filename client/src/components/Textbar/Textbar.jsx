@@ -7,11 +7,11 @@ const Textbar = () => {
         <div className="new_nav">
             <div className="nav_data">
                 <div className="left_data">
+                    <p><i className="fas fa-shopping-cart"></i>All</p>
                     <Link to="/products" >
-                        <p style={{ fontSize: "1rem" }}><i className="fas fa-shopping-cart"></i> All</p>
+                        <p>Best Sellers</p>
                     </Link>
                     <p>Mobiles</p>
-                    <p>Best Sellers</p>
                     <p>Fashion</p>
                     <p>Customer Service</p>
                     <p>Electronics</p>

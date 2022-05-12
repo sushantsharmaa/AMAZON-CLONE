@@ -5,6 +5,7 @@ const url = 'http://localhost:5000/products';
 
 const initialState = {
     products: [],
+    isLoading: true
 }
 
 export const getProducts = createAsyncThunk('products/getProducts', async () => {
@@ -17,7 +18,7 @@ export const getProducts = createAsyncThunk('products/getProducts', async () => 
 });
 
 const productSlice = createSlice({
-    name: 'productsData',
+    name: 'productData',
     initialState,
     reducers: {},
     extraReducers: {
