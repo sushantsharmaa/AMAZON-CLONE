@@ -1,6 +1,9 @@
 import { useDispatch } from 'react-redux';
 import { useEffect } from "react";
 import { getProducts } from "./features/product/productSlice";
+import Navbar from './components/Navbar/Navbar';
+import Textbar from './components/Textbar/Textbar';
+
 
 function App() {
   const dispatch = useDispatch();
@@ -10,9 +13,10 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <h1>Hi</h1>
-    </div>
+    <>
+      <Navbar />
+      <Textbar />
+    </>
   );
 }
 
