@@ -25,7 +25,8 @@ header nav .navlogo img {
 
 header nav .left {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 40px 0 20px;
   align-items: center;
   flex: 0.7;
 }
@@ -43,7 +44,7 @@ header nav .left input {
 
 header nav .left .search_icon {
   background-color: #febd69;
-  height: 40px;
+  height: 38px;
   width: 40px;
   display: flex;
   justify-content: center;
@@ -60,6 +61,7 @@ header nav .nav_searchbaar {
 }
 
 header nav .right {
+  margin-right: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,12 +87,10 @@ header nav .right .cart_btn {
   margin-left: 22px;
   cursor: pointer;
   margin-top: 2px;
-  padding: 8px;
+  padding: 6px;
   border-radius: 2px;
   border: 1px solid #131921;
   align-items: center;
-  justify-content: space-between;
-  margin-right: 3px;
 }
 
 header nav .right .cart_btn:hover {
@@ -107,8 +107,11 @@ header nav .right .cart_btn p {
   color: #fff;
   font-weight: 500;
   font-size: 12px;
-  margin-top: 11px;
+  margin-top: 25px;
   margin-right: 10px;
+}
+.right {
+  height: 100%;
 }
 
 .right a {
@@ -116,8 +119,13 @@ header nav .right .cart_btn p {
 }
 
 .rno {
-  width: 35px;
+  display: inline-block;
+  width: 40px;
   color: white;
+}
+
+.rno p {
+  margin-bottom: 0;
 }
 
 header nav .avtar {
@@ -148,7 +156,6 @@ header .extrasearch a {
 /* drawer sty */
 header nav .drawer {
   width: 250px;
-  background-color: red;
 }
 
 @media (max-width: 800px) {
@@ -189,5 +196,11 @@ header nav .drawer {
     width: 95px;
     margin-top: 14px;
     margin-left: 67px;
+  }
+
+  .rno {
+    display: none;
+    width: 40px;
+    color: white;
   }
 }

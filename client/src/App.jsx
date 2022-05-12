@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { getProducts } from "./features/product/productSlice";
 import Navbar from './components/Navbar/Navbar';
 import Textbar from './components/Textbar/Textbar';
+import Main from './components/Home/Main';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
     <>
       <Navbar />
       <Textbar />
+      <Main />
+      <Footer />
     </>
   );
 }

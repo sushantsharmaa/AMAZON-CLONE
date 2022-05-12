@@ -22,7 +22,7 @@ const Navbar = () => {
                 </div>
                 <div className='right'>
                     <div className='nav_btn'>
-                        <a>SignIn</a>
+                        <a href="www.google.com">SignIn</a>
                     </div>
                     <div className='cart_btn'>
                         <Badge badgeContent={4} color="primary">
@@ -31,8 +31,8 @@ const Navbar = () => {
                         <p>Cart</p>
                     </div>
                     <div className='rno'>
-                        <span>Return</span>
-                        <p>& Order</p>
+                        <p>Return</p>
+                        <p>&Order</p>
                     </div>
                     <Avatar className="avtar" />
                 </div>
