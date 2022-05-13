@@ -8,8 +8,8 @@ import Textbar from './components/Textbar/Textbar';
 import Footer from './components/Footer/Footer';
 import Login from "./components/Authentication/Login"
 import Signin from "./components/Authentication/Signin"
-import Product from './components/ProductList/Product';
 import ProductList from './components/ProductList/ProductList';
+import ProductDetails from './components/ProductDetails/ProductDetails';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -27,12 +27,11 @@ function App() {
         <Textbar />
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path='/products' element={<ProductList />}>
-            <Route path=':id' element={<Product />} />
-          </Route>
-          <Route path='/signin' element={<Signin />} />
+          <Route path='/register' element={<Signin />} />
           <Route path='/login' element={<Login />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path='/products' element={<ProductList />} />
+          <Route path='/products/:id' element={<ProductDetails />} />
         </Routes>
         <Footer />
       </Router>

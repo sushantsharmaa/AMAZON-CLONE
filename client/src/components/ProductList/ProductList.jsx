@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom';
 import Product from './Product';
 import "./productlist.css"
 
@@ -77,7 +78,8 @@ const ProductList = () => {
                         }
                         return 0;
                     }).map((item) => {
-                        return <Product key={item.id} {...item} />
+                        let route = `/products/${item.id}`
+                        return <Link style={{ textDecoration: "none", color: "black" }} to={route}><Product key={item.id} {...item} /></Link>
                     })}
                 </div>
             </div>
