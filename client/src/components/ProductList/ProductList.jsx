@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import Product from './Product';
 import "./productlist.css"
@@ -6,6 +6,8 @@ import "./productlist.css"
 const ProductList = () => {
     const { products } = useSelector((state) => state.productData);
     const [lowAndHigh, setLowAndHigh] = useState("");
+    const [brand, setBrand] = useState("");
+    const [price, setPrice] = useState(0);
 
     return (
         <div className='plist'>
@@ -25,41 +27,45 @@ const ProductList = () => {
                     <h6>FILTERS</h6>
                     <hr />
                     <h6>Brand</h6>
-                    <input type="checkbox" name="oneplus" />
+                    <input type="checkbox" value="oneplus" onChange={(e) => setBrand(e.target.value)} />
                     <label style={{ marginLeft: "5px" }} >OnePlus</label>
                     <br />
-                    <input type="checkbox" name="xiaomi" />
+                    <input type="checkbox" value="xiaomi" onChange={(e) => setBrand(e.target.value)} />
                     <label style={{ marginLeft: "5px" }} >Xiaomi</label>
                     <br />
-                    <input type="checkbox" name="iQOO" />
+                    <input type="checkbox" value="iQOO" onChange={(e) => setBrand(e.target.value)} />
                     <label style={{ marginLeft: "5px" }} >iQOO</label>
                     <br />
-                    <input type="checkbox" name="realme" />
-                    <label style={{ marginLeft: "5px" }} >Realme</label>
+                    <input type="checkbox" value="realme" onChange={(e) => setBrand(e.target.value)} />
+                    <label style={{ marginLeft: "5px" }}  >Realme</label>
                     <br />
-                    <input type="checkbox" name="samsung" />
-                    <label style={{ marginLeft: "5px" }} >Samsung</label>
+                    <input type="checkbox" value="samsung" onChange={(e) => setBrand(e.target.value)} />
+                    <label style={{ marginLeft: "5px" }}  >Samsung</label>
                     <br />
                     <h6 style={{ marginTop: "15px" }}>Price</h6>
-                    <input type="checkbox" name="price" />
-                    <label style={{ marginLeft: "5px" }} >Under ₹1,000</label>
+                    <input type="checkbox" value="1000" onChange={(e) => setPrice(e.target.value)} />
+                    <label style={{ marginLeft: "5px" }}  >Under ₹1,000</label>
                     <br />
-                    <input type="checkbox" name="price" />
-                    <label style={{ marginLeft: "5px" }} >₹1,000 - ₹5,000</label>
+                    <input type="checkbox" value="5000" onChange={(e) => setPrice(e.target.value)} />
+                    <label style={{ marginLeft: "5px" }}  >₹1,000 - ₹5,000</label>
                     <br />
-                    <input type="checkbox" name="price" />
+                    <input type="checkbox" value="10000" onChange={(e) => setPrice(e.target.value)} />
                     <label style={{ marginLeft: "5px" }} >₹5,000 - ₹10,000</label>
                     <br />
-                    <input type="checkbox" name="price" />
+                    <input type="checkbox" value="20000" onChange={(e) => setPrice(e.target.value)} />
                     <label style={{ marginLeft: "5px" }} >₹10,000 - ₹20,000</label>
                     <br />
-                    <input type="checkbox" name="price" />
+                    <input type="checkbox" value="20001" onChange={(e) => setPrice(e.target.value)} />
                     <label style={{ marginLeft: "5px" }} >Over ₹20,000</label>
-
                 </div>
                 <div className='plist-products'>
                     {products && products.filter((item) => {
-                        return item.price > 0
+                        if (price === 0) {
+                            return item.price > 0
+                        } else if (Number(price) > 20000) {
+                            return item.price > Number(price)
+                        }
+                        return item.price < Number(price)
                     }).sort((a, b) => {
                         if (lowAndHigh === "low-high") {
                             return a.price - b.price;
@@ -73,7 +79,6 @@ const ProductList = () => {
                     })}
                 </div>
             </div>
-
         </div>
     )
 }
