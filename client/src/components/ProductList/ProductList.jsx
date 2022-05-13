@@ -27,19 +27,19 @@ const ProductList = () => {
                     <h6>FILTERS</h6>
                     <hr />
                     <h6>Brand</h6>
-                    <input type="checkbox" value="oneplus" onChange={(e) => setBrand(e.target.value)} />
+                    <input type="checkbox" value="OnePlus" onChange={(e) => setBrand(e.target.value)} />
                     <label style={{ marginLeft: "5px" }} >OnePlus</label>
                     <br />
-                    <input type="checkbox" value="xiaomi" onChange={(e) => setBrand(e.target.value)} />
-                    <label style={{ marginLeft: "5px" }} >Xiaomi</label>
+                    <input type="checkbox" value="Redmi" onChange={(e) => setBrand(e.target.value)} />
+                    <label style={{ marginLeft: "5px" }} >Redmi</label>
                     <br />
                     <input type="checkbox" value="iQOO" onChange={(e) => setBrand(e.target.value)} />
                     <label style={{ marginLeft: "5px" }} >iQOO</label>
                     <br />
-                    <input type="checkbox" value="realme" onChange={(e) => setBrand(e.target.value)} />
+                    <input type="checkbox" value="Realme" onChange={(e) => setBrand(e.target.value)} />
                     <label style={{ marginLeft: "5px" }}  >Realme</label>
                     <br />
-                    <input type="checkbox" value="samsung" onChange={(e) => setBrand(e.target.value)} />
+                    <input type="checkbox" value="Samsung" onChange={(e) => setBrand(e.target.value)} />
                     <label style={{ marginLeft: "5px" }}  >Samsung</label>
                     <br />
                     <h6 style={{ marginTop: "15px" }}>Price</h6>
@@ -60,6 +60,8 @@ const ProductList = () => {
                 </div>
                 <div className='plist-products'>
                     {products && products.filter((item) => {
+                        return item.title.includes(brand);
+                    }).filter((item) => {
                         if (price === 0) {
                             return item.price > 0
                         } else if (Number(price) > 20000) {
