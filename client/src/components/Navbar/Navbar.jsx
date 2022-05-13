@@ -33,11 +33,7 @@ const Navbar = () => {
                         </Badge>
                         <p>Cart</p>
                     </div>
-                    <div className='rno'>
-                        <p>Return</p>
-                        <p>&Order</p>
-                    </div>
-                    <Avatar className="avtar" />
+                    <Avatar className="avtar" alt="Travis Howard" src="https://mui.com/static/images/avatar/2.jpg" />
                 </div>
             </nav>
         </header>

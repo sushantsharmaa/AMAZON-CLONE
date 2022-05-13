@@ -1,14 +1,15 @@
 import React from 'react'
+import "./product.css"
 
-const Product = ({ detailUrl, title, price }) => {
+const Product = ({ url, title, price }) => {
     return (
-        <div>
-            <div>
-                <img src={detailUrl} alt={title.shortTitle} />
+        <div className='solo'>
+            <div className='solo-img'>
+                <img src={url} alt={title} />
             </div>
-            <div>
-                <h5>{title.shortTitle}</h5>
-                <p>{price.mrp}</p>
+            <div className='solo-title'>
+                <h6>{title}</h6>
+                <p><span>₹ </span>{price}</p>
             </div>
         </div>
     )

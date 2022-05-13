@@ -2,88 +2,99 @@
   "products": [
     {
       "id": "products1",
-      "url": "https://rukminim1.flixcart.com/image/150/150/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/416/416/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70",
-      "title": {
-        "shortTitle": "Home & Kitchen",
-        "longTitle": "Pigeon FAVOURITE Electric Kettle  (1.5 L, Silver, Black)"
-      },
-      "price": {
-        "mrp": 1195,
-        " cost": 625,
-        "discount": "47%"
-      },
-      "description": "This electric kettle from Pigeon will soon become a travelers best friend, a hostelite saviour and an answer to all the midnight cravings. With this handy appliance, you can boil water and use it to make instant noodles, packet soup, coffee and green tea.",
-      "discount": "Extra 10% Off",
-      "tagline": "Deal of the day"
+      "url": "https://m.media-amazon.com/images/I/71AvQd3VzqL._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB Storage)",
+      "price": 19999
     },
     {
-      " id": "products2",
-      "url": "https://rukminim1.flixcart.com/image/416/416/kl6wx3k0/sandwich-maker/8/r/d/sandwich-01-flipkart-smartbuy-original-imagydds4zthxt8z.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/416/416/kl6wx3k0/sandwich-maker/8/r/d/sandwich-01-flipkart-smartbuy-original-imagydds4zthxt8z.jpeg?q=70",
-      "title": {
-        "shortTitle": "Sandwich Makers",
-        "longTitle": "SmartBuy Sandwich 01 Grill  (Black)"
-      },
-      "price": {
-        "mrp": 1499,
-        "cost": 899,
-        "discount": "40%"
-      },
-      "description": "This non-stick sandwich toaster .easy to use and very handy. Directly hold over flame to make tasty toasts and toasted sandwiches. Specially designed by keeping your needs in mind, the sandwich maker makes whatever youre doing simpler, smarter and better",
-      "discount": "From 99+5% Off",
-      "tagline": "Pestige, Nova & more"
+      "id": "products2",
+      "url": "https://m.media-amazon.com/images/I/71V--WZVUIL._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "OnePlus Nord CE 2 Lite 5G (Black Dusk, 6GB RAM, 128GB Storage)",
+      "price": 19999
     },
     {
       "id": "products3",
-      "url": "https://rukminim1.flixcart.com/image/150/150/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/416/416/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70",
-      "title": {
-        "shortTitle": "Fitness Gear",
-        "longTitle": "AJRO DEAL New Adjustable Single Resistance Tube (Multicolor) Resistance Tube  (Multicolor)"
-      },
-      "price": {
-        "mrp": 499,
-        "cost": 166,
-        " discount": "66%"
-      },
-      "description": "This unique product can tone your back muscles, reduce belly fat, improve blood circulation and also improves your body posture. It increases the stamina, energy and vitality of the body. The elastic resistance of the rubber training rope can be used to train and exercise in whichever way you want, according to your physical needs.'",
-      "discount": "Upto 70% Off",
-      "tagline": "Deal of the Day"
+      "url": "https://m.media-amazon.com/images/I/71AvQd3VzqL._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "OnePlus Nord CE 2 Lite 5G (Blue Tide, 8GB RAM, 128GB Storage)",
+      "price": 21999
     },
     {
       "id": "products4",
-      "url": "https: //rukminim1.flixcart.com/image/300/300/kll7bm80/smartwatch/c/1/n/43-mo-sw-sense-500-android-ios-molife-original-imagyzyycnpujyjh.jpeg?q=70",
-      "detailUrl": "https: //rukminim1.flixcart.com/image/416/416/kll7bm80/smartwatch/c/1/n/43-mo-sw-sense-500-android-ios-molife-original-imagyzyycnpujyjh.jpeg?q=70",
-      "title": {
-        "shortTitle": "Smart Watches",
-        "longTitle": "Molife Sense 500 Smartwatch  (Black Strap, Freesize)"
-      },
-      "price": {
-        "mrp": 6999,
-        "cost": 4049,
-        "discount": "42%"
-      },
-      "description": "The Molife Sense 500, a brilliant smartwatch with a beautiful large display. Say hello to the infinity 1.7-inch display with 2.5D curved edges. Thanks to seamless Bluetooth 5.0 connectivity, you wont have to keep waiting. Bring a change to your outfit every day with changeable straps. A splash of color every day keeps the boredom away.",
-      "discount": "Grab Now",
-      "tagline": "Best Seller"
+      "url": "https://m.media-amazon.com/images/I/71V--WZVUIL._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "OnePlus Nord CE 2 Lite 5G (Black Dusk, 8GB RAM, 128GB Storage)",
+      "price": 21999
     },
     {
       "id": "products5",
-      "url": "https: //rukminim1.flixcart.com/image/416/416/k3uhhu80/hair-dryer/n/m/t/nova-2800-w-professional-nhp-8220-original-imafmvwfhmzsxdrw.jpeg?q=70",
-      "detailUrl": "https: //rukminim1.flixcart.com/image/416/416/k3uhhu80/hair-dryer/n/m/t/nova-2800-w-professional-nhp-8220-original-imafmvwfhmzsxdrw.jpeg?q=70",
-      "title": {
-        "shortTitle": "Trimmers, Dryers & more",
-        "longTitle": "Nova Professional NHP 8220 Hair Dryer  (1800 W, Multicolor)"
-      },
-      "price": {
-        "mrp": 1899,
-        "cost": 1124,
-        "discount": "40%"
-      },
-      "description": " a trimer is a molecule or an anion formed by combination or association of three molecules or ions of the same substance.",
-      "discount": "From ₹499",
-      "tagline": "Kubra, Nova & more"
+      "url": "https://m.media-amazon.com/images/I/71WC+Qz1KgL._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "Redmi 10A (Sea Blue, 4GB RAM, 64GB Storage)",
+      "price": 9499
+    },
+    {
+      "id": "products6",
+      "url": "https://m.media-amazon.com/images/I/61wEaWM9K1L._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "iQOO Z6 5G (Chromatic Blue, 4GB RAM, 128GB Storage) | Snapdragon 695-6nm Processor | 120Hz FHD+",
+      "price": 13999
+    },
+    {
+      "id": "products7",
+      "url": "https://m.media-amazon.com/images/I/71MaDLgHnxL._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "Samsung Galaxy M53 5G (Mystique Green, 6GB, 128GB Storage) | Travel Adapter to be Purchased Separately",
+      "price": 26499
+    },
+    {
+      "id": "products8",
+      "url": "https://m.media-amazon.com/images/I/71oMvZuueHL._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "iQOO Z6 44W (Lumina Blue, 6GB RAM, 128GB Storage) | 44W FlashCharge + 5000mAh Battery | FHD+ AMOLED",
+      "price": 15999
+    },
+    {
+      "id": "products9",
+      "url": "https://m.media-amazon.com/images/I/71oMvZuueHL._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "iQOO Z6 44W (Lumina Blue, 4GB RAM, 128GB Storage) | 44W FlashCharge + 5000mAh Battery | FHD+ AMOLED",
+      "price": 14999
+    },
+    {
+      "id": "products10",
+      "url": "https://m.media-amazon.com/images/I/61hJWkx8LSL._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "iQOO Z6 44W (Raven Black, 4GB RAM, 128GB Storage) | 44W FlashCharge + 5000mAh Battery | FHD+ AMOLED",
+      "price": 14499
+    },
+    {
+      "id": "products11",
+      "url": "https://m.media-amazon.com/images/I/716uVx3Wr5L._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "OnePlus 10R 5G (Forest Green, 12GB RAM, 256GB Storage, 80W SuperVOOC)",
+      "price": 42999
+    },
+    {
+      "id": "products12",
+      "url": "https://m.media-amazon.com/images/I/615YGGce1-L._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "iQOO Z6 Pro 5G (Legion Sky, 6GB RAM, 128GB Storage) | Snapgradon 778G | 66W FlashCharge | 1300 nits Peak",
+      "price": 23999
+    },
+    {
+      "id": "products13",
+      "url": "https://m.media-amazon.com/images/I/71BoiXkrEmL._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "OnePlus 10R 5G (Sierra Black, 8GB RAM, 128GB Storage, 80W SuperVOOC)",
+      "price": 38999
+    },
+    {
+      "id": "products14",
+      "url": "https://m.media-amazon.com/images/I/71U18UT1lzL._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "Samsung Galaxy M53 5G (Deep Ocean Blue, 6GB, 128GB Storage) | Travel Adapter to be Purchased Separately",
+      "price": 264999
+    },
+    {
+      "id": "products15",
+      "url": "https://m.media-amazon.com/images/I/61hJWkx8LSL._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "iQOO Z6 44W (Raven Black, 6GB RAM, 128GB Storage) | 44W FlashCharge + 5000mAh Battery | FHD+ AMOLED",
+      "price": 15999
+    },
+    {
+      "id": "products16",
+      "url": "https://m.media-amazon.com/images/I/71293gyogZL._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "Redmi 10A (Charcoal Black, 4GB RAM, 64GB Storage)",
+      "price": 9499
     }
   ]
 }

@@ -1,3 +1,28 @@
 .plist {
   margin-top: 73px;
 }
+
+.sort {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+}
+
+.plist-main {
+  display: flex;
+  width: 98%;
+  margin: auto;
+}
+
+.filters {
+  width: 20%;
+}
+
+.plist-products {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  gap: 50px;
+  padding-left: 40px;
+  margin-top: 15px;
+}
