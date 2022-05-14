@@ -1,0 +1,52 @@
+.cart {
+  padding: 100px 30px 70px 30px;
+  display: flex;
+  gap: 20px;
+  background-color: #eaeded;
+}
+
+.empty-cart {
+  width: 60%;
+  margin: auto;
+  padding: 200px 0px 200px 150px;
+}
+
+.cart-left {
+  width: 70%;
+  background-color: white;
+}
+
+.cart-left h2 {
+  margin: 20px 0 0 20px;
+}
+
+.cart-right {
+  width: 30%;
+  padding: 35px;
+  background-color: white;
+}
+
+.cart-right button {
+  width: 100%;
+  height: 35px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #ffd814;
+}
+
+.emi {
+  width: 100%;
+  margin-top: 30px;
+  border: 1px solid lightgray;
+}
+
+.emi p {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.cart-total {
+  float: right;
+  margin-right: 20px;
+}

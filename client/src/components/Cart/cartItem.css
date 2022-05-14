@@ -1,0 +1,27 @@
+.cart-item {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid lightgray;
+}
+
+.cart-item-left {
+  width: 20%;
+}
+
+.cart-item-right {
+  width: 80%;
+}
+
+.cart-item-left img {
+  width: 100%;
+}
+
+.right-btn button {
+  margin-right: 20px;
+  margin-top: 10px;
+  border: none;
+}

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./productDetails.css";
 
 const ProductDetails = () => {
@@ -14,6 +14,7 @@ const ProductDetails = () => {
     const handleClick = async () => {
         await axios.post("http://localhost:5000/cart", data).catch((error) => console.log(error))
         alert("Added to cart");
+        window.location.reload(false);
     }
     return (
         <div className="details">
@@ -25,7 +26,8 @@ const ProductDetails = () => {
                 <h4><span>₹ </span>{data.price}</h4>
                 <div className="d-button">
                     <button onClick={handleClick}>Add to Cart</button>
-                    <button>Buy Now</button>
+                    <Link to="/cart" onClick={handleClick}><button>Buy Now</button></Link>
+
                 </div>
             </div>
         </div>

@@ -5,8 +5,10 @@ import Avatar from '@mui/material/Avatar';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
+    const { amount } = useSelector((state) => state.cartData);
     return (
         <header>
             <nav>
@@ -27,12 +29,14 @@ const Navbar = () => {
                     <div className='nav_btn'>
                         <Link to="/register">Sign In</Link>
                     </div>
-                    <div className='cart_btn'>
-                        <Badge badgeContent={1} color="primary">
-                            <ShoppingCartIcon id="icon" />
-                        </Badge>
-                        <p>Cart</p>
-                    </div>
+                    <Link to="/cart">
+                        <div className='cart_btn'>
+                            <Badge badgeContent={amount} color="primary">
+                                <ShoppingCartIcon id="icon" />
+                            </Badge>
+                            <p>Cart</p>
+                        </div>
+                    </Link>
                     <Avatar className="avtar" alt="Travis Howard" src="https://mui.com/static/images/avatar/2.jpg" />
                 </div>
             </nav>
