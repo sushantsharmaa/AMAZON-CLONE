@@ -7,14 +7,15 @@ import Main from './components/Home/Main';
 import Navbar from './components/Navbar/Navbar';
 import Textbar from './components/Textbar/Textbar';
 import Footer from './components/Footer/Footer';
-import Login from "./components/Authentication/Login"
-import Signin from "./components/Authentication/Signin"
 import ProductList from './components/ProductList/ProductList';
 import ProductDetails from './components/ProductDetails/ProductDetails';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SignIn from './components/Authentication/SignIn';
+import SignUp from './components/Authentication/SignUp';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 
 function App() {
+  const user = false;
   const { cartItems } = useSelector((state) => state.cartData);
   const dispatch = useDispatch();
 
@@ -35,8 +36,10 @@ function App() {
         <Textbar />
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path='/register' element={<Signin />} />
-          <Route path='/login' element={<Login />} />
+          {user ? <Route path='/login' element={<Navigate replace to="/" />}></Route>
+            : <Route path="/login" element={<SignIn />} />}
+          {user ? <Route path='/register' element={<Navigate replace to="/" />}></Route>
+            : <Route path="/register" element={<SignUp />} />}
           <Route path='/cart' element={<CartContainer />} />
           <Route path='/products' element={<ProductList />} />
           <Route path='/products/:id' element={<ProductDetails />} />

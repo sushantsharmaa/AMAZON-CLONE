@@ -115,11 +115,28 @@
   ],
   "cart": [
     {
-      "id": "1",
-      "url": "https://m.media-amazon.com/images/I/71AvQd3VzqL._AC_UL480_FMwebp_QL65_.jpg",
-      "title": "OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB Storage)",
-      "price": 19999,
+      "id": "2",
+      "url": "https://m.media-amazon.com/images/I/513aVufl90S._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "Realme narzo 30 Pro (Blade Sliver, 8GB RAM, 128GB Storage) Without Offer",
+      "price": 15998,
       "amount": 1
+    },
+    {
+      "id": "11",
+      "url": "https://m.media-amazon.com/images/I/716uVx3Wr5L._AC_UL480_FMwebp_QL65_.jpg",
+      "title": "OnePlus 10R 5G (Forest Green, 12GB RAM, 256GB Storage, 80W SuperVOOC)",
+      "price": 42999,
+      "amount": 1
+    }
+  ],
+  "user": [
+    {
+      "name": "Sushant Sharma",
+      "email": "sushant.x01@gmail.com",
+      "phone": "8168696796",
+      "password": "kuchbhi",
+      "confirm-password": "kuchbhi",
+      "id": 1
     }
   ]
 }
