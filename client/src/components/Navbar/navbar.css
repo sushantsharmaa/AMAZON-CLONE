@@ -68,18 +68,13 @@ header nav .right {
   flex: 0.3;
 }
 
-header nav .right .nav_btn a {
+header nav .right .nav_btn {
   color: #fff;
   font-weight: 500;
   text-decoration: none;
   margin-right: 2px;
-  border: 1px solid #131921;
   border-radius: 2px;
   padding: 8px;
-}
-
-header nav .right .nav_btn a:hover {
-  border: 1px solid white;
 }
 
 header nav .right .cart_btn {

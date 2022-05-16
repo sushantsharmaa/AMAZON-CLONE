@@ -26,6 +26,7 @@ const SignIn = () => {
                 window.location = '/';
             }
         } catch (error) {
+            alert("Something went wrong, Check your Email and Password again!");
             console.log(error.message);
         }
     }

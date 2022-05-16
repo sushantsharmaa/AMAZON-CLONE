@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import CartItem from './CartItem'
+import { Link } from "react-router-dom";
 import "./cartContainer.css"
 
 const CartContainer = () => {
@@ -30,7 +31,7 @@ const CartContainer = () => {
             </div>
             <div className='cart-right'>
                 <h5>{`Subtotal (${amount} Item): `}<span>₹ </span>{total.toFixed(2)}</h5>
-                <button>Proceed to Buy</button>
+                <Link to="#"><button>Proceed to Buy</button></Link>
                 <div className='emi'>
                     <p>EMI Available</p>
                 </div>

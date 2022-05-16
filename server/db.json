@@ -128,15 +128,5 @@
       "price": 42999,
       "amount": 1
     }
-  ],
-  "user": [
-    {
-      "name": "Sushant Sharma",
-      "email": "sushant.x01@gmail.com",
-      "phone": "8168696796",
-      "password": "kuchbhi",
-      "confirm-password": "kuchbhi",
-      "id": 1
-    }
   ]
 }

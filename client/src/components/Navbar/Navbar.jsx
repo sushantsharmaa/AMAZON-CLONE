@@ -34,9 +34,11 @@ const Navbar = ({ user }) => {
                                 onClick={async () => {
                                     await signOut(auth);
                                 }}
-                                style={{ color: "white" }}>(Signout)</span> : <span style={{ color: "white", marginLeft: "5px" }} >Sign In</span>}
+                                style={{ color: "white" }}>
+                                Hello Guest<p style={{ margin: 0, marginLeft: "10px" }}>(Signout)</p>
+                            </span> : <span style={{ color: "white", marginLeft: "10px" }} >
+                                Sign In</span>}
                         </Link>
-
                     </div>
                     <Link to="/cart">
                         <div className='cart_btn'>
