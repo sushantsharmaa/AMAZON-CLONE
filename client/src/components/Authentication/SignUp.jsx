@@ -1,25 +1,32 @@
 import { Divider } from '@mui/material';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import axios from "axios";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from '../../firebase-config'
 import "./signUp.css";
 
 const SignUp = () => {
-    const [user, setUser] = useState({});
+    const [userData, setUserData] = useState({});
 
     const handleCHange = (e) => {
         const { name, value } = e.target;
-        setUser({
-            ...user,
+        setUserData({
+            ...userData,
             [name]: value
         })
     }
 
-    const handleClick = async (e) => {
+    const register = async (e) => {
         e.preventDefault();
-        const res = await axios.post("http://localhost:5000/user", user);
-        alert("Succesfully Register");
-        return res;
+        try {
+            const user = await createUserWithEmailAndPassword(auth, userData.email, userData.password);
+            if (user) {
+                alert("Register Successfully");
+                window.location = '/';
+            }
+        } catch (error) {
+            console.log(error.message);
+        }
     }
 
     return (
@@ -52,13 +59,12 @@ const SignUp = () => {
                                 <label htmlFor='password'>Password again</label>
                                 <input type="password" name="confirm-password" id="confirm-password" onChange={handleCHange} />
                             </div>
-                            <button className='signin_btn' onClick={handleClick}>Continue</button>
+                            <button type='submit' className='signin_btn' onClick={register}>Continue</button>
                         </form>
                         <p>By creating an account or logging in, you agree to Amazon’s Conditions of Use and Privacy Policy.</p>
                         <Divider />
                         <p>Already have an account? <Link to="/login">Sign in</Link></p>
                     </div>
-                    {/* <ToastContainer /> */}
                 </div>
             </section>
         </>

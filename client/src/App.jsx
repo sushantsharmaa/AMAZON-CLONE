@@ -1,7 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { getProducts } from "./features/product/productSlice";
 import { calculateTotals, getCartItems } from "./features/cart/cartSlice";
+import { auth } from './firebase-config'
+import { onAuthStateChanged } from "firebase/auth";
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import CartContainer from './components/Cart/CartContainer';
 import Main from './components/Home/Main';
 import Navbar from './components/Navbar/Navbar';
@@ -11,13 +14,16 @@ import ProductList from './components/ProductList/ProductList';
 import ProductDetails from './components/ProductDetails/ProductDetails';
 import SignIn from './components/Authentication/SignIn';
 import SignUp from './components/Authentication/SignUp';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 
 function App() {
-  const user = false;
+  const [user, setUser] = useState({});
   const { cartItems } = useSelector((state) => state.cartData);
   const dispatch = useDispatch();
+
+  onAuthStateChanged(auth, (currentUser) => {
+    setUser(currentUser);
+  });
 
   useEffect(() => {
     dispatch(calculateTotals());
@@ -32,7 +38,7 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
+        <Navbar user={user} />
         <Textbar />
         <Routes>
           <Route path="/" element={<Main />} />

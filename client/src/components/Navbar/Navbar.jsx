@@ -6,8 +6,10 @@ import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { auth } from '../../firebase-config';
+import { signOut } from "firebase/auth";
 
-const Navbar = () => {
+const Navbar = ({ user }) => {
     const { amount } = useSelector((state) => state.cartData);
     return (
         <header>
@@ -27,7 +29,14 @@ const Navbar = () => {
                 </div>
                 <div className='right'>
                     <div className='nav_btn'>
-                        <Link to="/login">Sign In</Link>
+                        <Link to="/login">
+                            {user ? <span
+                                onClick={async () => {
+                                    await signOut(auth);
+                                }}
+                                style={{ color: "white" }}>(Signout)</span> : <span style={{ color: "white", marginLeft: "5px" }} >Sign In</span>}
+                        </Link>
+
                     </div>
                     <Link to="/cart">
                         <div className='cart_btn'>
