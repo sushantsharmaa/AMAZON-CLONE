@@ -7,7 +7,7 @@ const CartItem = ({ id, url, title, price, amount }) => {
     const dispatch = useDispatch();
 
     const handleClick = async () => {
-        const res = await axios.delete(`http://localhost:5000/cart/${id}`);
+        const res = await axios.delete(`https://amazon-clone-fake-api.herokuapp.com/cart/${id}`);
         window.location.reload(false);
         return res;
     }

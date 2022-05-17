@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const url = 'http://localhost:5000/products';
+const url = 'https://amazon-clone-fake-api.herokuapp.com/products';
 
 const initialState = {
     products: [],
