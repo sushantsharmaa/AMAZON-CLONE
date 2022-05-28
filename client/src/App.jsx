@@ -27,13 +27,13 @@ function App() {
 
   useEffect(() => {
     dispatch(calculateTotals());
-  }, [cartItems]);
+  }, [cartItems, dispatch]);
 
 
   useEffect(() => {
     dispatch(getProducts());
     dispatch(getCartItems());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>

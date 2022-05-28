@@ -9,7 +9,7 @@ const ProductDetails = () => {
 
     useEffect(() => {
         axios.get(`https://amazon-clone-fake-api.herokuapp.com/products/${id}`).then((res) => setData(res.data));
-    }, [])
+    }, [id])
 
     const handleClick = async () => {
         await axios.post("https://amazon-clone-fake-api.herokuapp.com/cart", data).catch((error) => console.log(error))

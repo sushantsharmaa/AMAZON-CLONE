@@ -1,20 +1,30 @@
 .product-section {
-  width: 25%;
+  width: 23%;
+  height: 420px;
   padding: 15px;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .product-grid {
+  height: 70%;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fill, 45%);
+  margin-top: 20px;
 }
 
 .product img {
   width: 100%;
+  height: 90px;
 }
 
-span {
+.product p {
+  font-size: smaller;
+  margin: 0;
+}
+
+.tagline {
+  margin-top: 20px;
   color: green;
 }

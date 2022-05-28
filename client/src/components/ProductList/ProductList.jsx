@@ -79,7 +79,7 @@ const ProductList = () => {
                         return 0;
                     }).map((item) => {
                         let route = `/products/${item.id}`
-                        return <Link style={{ textDecoration: "none", color: "black" }} to={route}><Product key={item.id} {...item} /></Link>
+                        return <Link key={item.id} style={{ textDecoration: "none", color: "black" }} to={route}><Product {...item} /></Link>
                     })}
                 </div>
             </div>

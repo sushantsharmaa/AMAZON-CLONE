@@ -14,13 +14,49 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 300px;
+  margin-top: 220px;
 }
 
 .home__row {
   display: flex;
   gap: 20px;
-  width: 98%;
+  width: 97%;
   margin: auto;
   margin-bottom: 60px;
+}
+
+.last_card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 25%;
+  height: 420px;
+}
+
+#last_card_one {
+  background-color: white;
+  padding: 20px;
+}
+
+#last_card_one p {
+  font-size: smaller;
+}
+
+#last_card_one span {
+  color: skyblue;
+}
+
+#last_card_two {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#last_card_two h6 {
+  margin-top: 20px;
+}
+
+.last_card img {
+  width: 100%;
+  height: 132px;
 }
