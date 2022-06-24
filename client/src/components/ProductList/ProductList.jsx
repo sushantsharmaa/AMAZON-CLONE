@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const ProductList = () => {
-  const { products } = useSelector((state) => state.productData);
+  const { phones } = useSelector((state) => state.productPhoneData);
   const [lowAndHigh, setLowAndHigh] = useState("");
   const [brand, setBrand] = useState("");
   const [price, setPrice] = useState(0);
@@ -100,8 +100,8 @@ const ProductList = () => {
           <label style={{ marginLeft: "5px" }}>Over ₹20,000</label>
         </div>
         <div className="plist-products">
-          {products &&
-            products
+          {phones &&
+            phones
               .filter((item) => {
                 return item.title.includes(brand);
               })

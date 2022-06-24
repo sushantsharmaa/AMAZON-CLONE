@@ -73,3 +73,54 @@ export const rowTwo = [
     tagline: "See more",
   },
 ];
+
+export const rowFour = [
+  {
+    id: "card11",
+    title: "Up to 70% off | Styles for Men",
+    image: [
+      "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-1-372-232._SY232_CB636110853_.jpg",
+      "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-2-372-232._SY232_CB636110853_.jpg",
+      "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-3-372-232._SY232_CB636110853_.jpg",
+      "https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF_4-372-232._SY232_CB636110853_.jpg",
+    ],
+    name: ["Clothing", "Footwear", "Watches", "Bags & luggage"],
+    tagline: "End of season sale",
+  },
+  {
+    id: "card12",
+    title: "Up to 45% off",
+    image: [
+      "https://rukminim1.flixcart.com/image/880/1056/kwtkxow0/shirt/c/u/n/xl-brd-white-p-v-creations-original-imag9f3yxz7d89t4.jpeg?q=50",
+      "https://rukminim1.flixcart.com/image/880/1056/krf91u80/top/g/n/v/xs-lbt-13-maroon-london-belly-original-imag57qgzcm3hsmv.jpeg?q=50",
+      "https://rukminim1.flixcart.com/image/880/1056/kf2v3ww0/top/z/f/t/l-044-yukon01-original-imafvhkejzfhqaqz.jpeg?q=50",
+      "https://rukminim1.flixcart.com/image/580/696/kwzap3k0/shirt/r/q/j/l-lstr-acqua-p-v-creations-original-imag9jggj6naa4cu.jpeg?q=50",
+    ],
+    name: ["Men Shirt", "Women Top", "Women Shirt", "Men Shirt"],
+    tagline: "End of season sale",
+  },
+  {
+    id: "card13",
+    title: "Value Packs under ₹3599",
+    image: [
+      "https://rukminim1.flixcart.com/image/580/696/kz8qsnk0/t-shirt/g/z/n/m-db1024-42-3bros-original-imagbawh38j3ghzr.jpeg?q=50",
+      "https://rukminim1.flixcart.com/image/580/696/kzhbfrk0/top/v/b/6/m-fancy-top-shree-villa-original-imagbhgpqkj9snta.jpeg?q=50",
+      "https://rukminim1.flixcart.com/image/580/696/k6gsk280/t-shirt/e/z/h/xl-pp-374-385-379-revesto-original-imafkxwnetcxt4xr.jpeg?q=50",
+      "https://rukminim1.flixcart.com/image/580/696/knni7ww0/top/o/m/o/s-dmp303-dmp-fashion-original-imag2a5qkjgjf22k.jpeg?q=50",
+    ],
+    name: ["Men T-Shirt", "Women Top", "Men V Neck", "Women Top"],
+    tagline: "End of season sale",
+  },
+  {
+    id: "card14",
+    title: "Clothing for all",
+    image: [
+      "https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/WRS_DEC_21/PC/2x/WRS-GW-PC-QC_01._SY232_CB651155926_.jpg",
+      "https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/WRS_DEC_21/PC/2x/WRS-GW-PC-QC_02._SY232_CB651155926_.jpg",
+      "https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/WRS_DEC_21/PC/2x/WRS-GW-PC-QC2_01._SY232_CB651155926_.jpg",
+      "https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/WRS_DEC_21/PC/2x/WRS-GW-PC-QC2_02._SY232_CB651155926_.jpg",
+    ],
+    name: ["Kurtas", "Sarees", "T-shirt", "Jeans"],
+    tagline: "End of season sale",
+  },
+];

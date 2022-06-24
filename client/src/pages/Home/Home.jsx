@@ -1,12 +1,12 @@
 import "./home.css";
-import { rowOne, rowTwo } from "./data";
+import { rowOne, rowTwo, rowFour } from "./data";
 import { useSelector } from "react-redux";
 import Card from "../../components/Card/Card";
 import Carousel from "../../components/Carousel/Carousel";
 
 const Home = () => {
-  const { products } = useSelector((state) => state.productData);
-  console.log(products);
+  const { phones } = useSelector((state) => state.productPhoneData);
+  const { clothes } = useSelector((state) => state.productClothData);
   return (
     <div className="home">
       <Carousel />
@@ -52,8 +52,21 @@ const Home = () => {
         <div className="row-three">
           <h3>Related to items you've viewed</h3>
           <div className="row-three-img">
-            {products.map((item) => {
+            {phones.map((item) => {
               return <img key={item.id} src={item.url} alt={item.title} />;
+            })}
+          </div>
+        </div>
+        <div className="row-four">
+          {rowFour.map((item) => {
+            return <Card key={item.id} {...item} />;
+          })}
+        </div>
+        <div className="row-five">
+          <h3>Related to items you've viewed</h3>
+          <div className="row-five-img">
+            {clothes.map((item) => {
+              return <img key={item._id} src={item.img} alt={item.name} />;
             })}
           </div>
         </div>

@@ -2,7 +2,8 @@ import { auth } from "./firebase-config";
 import { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { useDispatch, useSelector } from "react-redux";
-import { getProducts } from "./features/product/productSlice";
+import { getPhoneProducts } from "./features/product/productPhoneSlice";
+import { getClothProducts } from "./features/product/productClothSlice";
 import { calculateTotals, getCartItems } from "./features/cart/cartSlice";
 import {
   BrowserRouter as Router,
@@ -34,7 +35,8 @@ function App() {
   }, [cartItems, dispatch]);
 
   useEffect(() => {
-    dispatch(getProducts());
+    dispatch(getPhoneProducts());
+    dispatch(getClothProducts());
     dispatch(getCartItems());
   }, [dispatch]);
 
