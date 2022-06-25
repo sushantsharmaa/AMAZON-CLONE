@@ -1,11 +1,12 @@
 header {
-  background-color: #131921;
-  width: 100%;
-  height: 60px;
-  position: fixed;
   top: 0;
   z-index: 2;
   width: 100%;
+  width: 100%;
+  height: 60px;
+  color: white;
+  position: fixed;
+  background-color: #131921;
 }
 
 header nav {
@@ -19,8 +20,16 @@ header nav {
 }
 
 header nav .navlogo img {
-  width: 110px;
-  margin-top: 10px;
+  width: 102px;
+  margin-top: 8px;
+}
+
+.navlogo:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 1s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
 }
 
 header nav .left {
@@ -31,8 +40,17 @@ header nav .left {
   flex: 0.7;
 }
 
+.location {
+  margin-top: 5px;
+  font-size: small;
+}
+
+.location h6 {
+  font-size: small;
+}
+
 header nav .left input {
-  width: 500px;
+  width: 450px;
   height: 38px;
   border: none;
   outline: none;
@@ -60,8 +78,23 @@ header nav .nav_searchbaar {
   align-items: center;
 }
 
+.sign-in-btn,
+.r-and-o {
+  color: white;
+  font-size: small;
+  margin-top: 5px;
+}
+
+.sign-in-btn:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 1s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
 header nav .right {
-  margin-right: 40px;
+  margin-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,10 +117,15 @@ header nav .right .cart_btn {
   margin-top: 2px;
   border-radius: 2px;
   align-items: center;
+  font-size: 2rem;
 }
 
-header nav .right .cart_btn:hover {
-  border: 1px solid white;
+.cart_btn:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 1s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
 }
 
 header nav .right .cart_btn #icon {
@@ -189,5 +227,41 @@ header nav .drawer {
     width: 95px;
     margin-top: 14px;
     margin-left: 67px;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
