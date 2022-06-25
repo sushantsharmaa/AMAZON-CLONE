@@ -11,6 +11,11 @@
   justify-content: space-between;
 }
 
+.menu-icon {
+  color: #fff;
+  margin: 8px 0px 0px 12px;
+}
+
 .new_nav .nav_data .left_data {
   display: flex;
   justify-content: space-evenly;
@@ -20,14 +25,61 @@
 
 .new_nav .nav_data .left_data p {
   color: #fff;
-  font-weight: 500;
-  font-size: 13px;
+  font-size: 15px;
   margin-bottom: 0;
+}
+
+.phones {
+  text-decoration: none;
+}
+
+.phones:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 1s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
 }
 
 /* media query */
 @media (max-width: 808px) {
   .new_nav {
     display: none;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
