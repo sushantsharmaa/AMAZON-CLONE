@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const url = "http://localhost:5000/clothes";
+const url = "https://amazon-clone-by-sushant.herokuapp.com/clothes";
 
 const initialState = {
   clothes: [],

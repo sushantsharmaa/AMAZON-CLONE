@@ -10,13 +10,13 @@ const ProductDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/phones/${id}`)
+      .get(`https://amazon-clone-by-sushant.herokuapp.com/phones/${id}`)
       .then((res) => setData(res.data));
   }, [id]);
 
   const handleClick = async () => {
     await axios
-      .post("http://localhost:5000/cart", data)
+      .post("https://amazon-clone-by-sushant.herokuapp.com/cart", data)
       .catch((error) => console.log(error));
     alert("Added to cart");
     window.location.reload(false);
