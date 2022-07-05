@@ -1,10 +1,10 @@
-import { increase, decrease } from "../../features/cart/cartSlice";
-import { useDispatch } from "react-redux";
+// import { increase, decrease } from "../../features/cart/cartSlice";
+// import { useDispatch } from "react-redux";
 import "./cartItem.css";
 import axios from "axios";
 
 const CartItem = ({ id, url, title, price, amount }) => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const handleClick = async () => {
     const res = await axios.delete(`http://localhost:5000/cart/${id}`);
@@ -24,7 +24,7 @@ const CartItem = ({ id, url, title, price, amount }) => {
           {price}
         </h5>
         <div className="right-btn">
-          <button
+          {/* <button
             className="amount-btn"
             onClick={() => {
               dispatch(increase({ id }));
@@ -43,7 +43,7 @@ const CartItem = ({ id, url, title, price, amount }) => {
             }}
           >
             -
-          </button>
+          </button> */}
           <button className="remove-btn" onClick={handleClick}>
             DELETE
           </button>
